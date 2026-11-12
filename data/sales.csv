@@ -1,0 +1,40 @@
+OrderID,OrderDate,ProductName,Category,Region,Quantity,UnitPrice,UnitCost
+ORD0001,2026-10-16,Mechanical Keyboard,Accessories,South,1,2600,1750
+ORD0002,2026-11-07,Monitor,Electronics,West,6,8300,6400
+ORD0003,2026-10-15,Wireless Mouse,Accessories,North,1,550,450
+ORD0004,2026-10-15,External SSD,Storage,West,2,6700,5000
+ORD0005,2026-10-28,Router,Networking,East,3,3000,2300
+ORD0006,2026-10-07,Laptop Stand,Accessories,North,2,800,500
+ORD0007,2026-11-08,Webcam,Electronics,East,1,2200,1400
+ORD0008,2026-10-25,Wireless Mouse,Accessories,North,0,750,350
+ORD0009,2026-11-06,External SSD,Storage,South,3,6700,4900
+ORD0010,2026-10-19,Office Chair,Furniture,North,1,7600,5600
+ORD0011,2026-10-30,USB Hub,Accessories,East,1,500,250
+ORD0012,2026-10-18,Monitor,Electronics,North,3,8500,6500
+ORD0013,2026-10-11,Router,Networking,West,6,3100,2300
+ORD0014,2026-10-21,Webcam,Electronics,North,3,2400,1400
+ORD0015,2026-10-18,USB Hub,Accessories,North,1,500,350
+ORD0016,2026-10-14,USB Hub,Accessories,West,5,700,250
+ORD0017,2026-10-17,Webcam,Electronics,South,6,2200,1400
+ORD0018,2026-11-07,USB Hub,Accessories,West,6,600,250
+ORD0019,2026-10-09,Router,Networking,West,4,-1200,2300
+ORD0020,2026-11-10,Keyboard,Accessories,South,1,1000,700
+ORD0021,2026-10-25,Mechanical Keyboard,Accessories,West,4,2900,1650
+ORD0022,2026-11-05,Router,Networking,North,4,3300,2300
+ORD0023,2026-10-22,Mechanical Keyboard,Accessories,North,6,2600,1750
+ORD0024,2026-10-01,Laptop Stand,Accessories,East,4,800,600
+ORD0025,2026-11-10,External SSD,Storage,East,2,6600,4800
+ORD0026,2026-10-10,Mechanical Keyboard,Accessories,East,5,2900,1750
+ORD0027,2026-11-08,Monitor,Electronics,East,5,8600,6400
+ORD0028,2026-10-20,Laptop,Computers,South,1,51800,44500
+ORD0029,2026-10-06,Wireless Mouse,Accessories,West,2,850,350
+ORD0030,2026-10-31,,Accessories,South,5,1100,700
+ORD0031,2026-10-14,Laptop Stand,Accessories,South,5,1000,600
+ORD0032,2026-10-29,Office Chair,Furniture,West,3,7800,5600
+ORD0033,2026-10-22,Keyboard,Accessories,North,2,1100,600
+ORD0034,2026-10-01,Router,Networking,North,5,3100,2300
+ORD0035,2026-10-05,Office Chair,Furniture,North,6,7600,5600
+ORD0036,2026-10-18,Headphones,Electronics,West,1,1900,1100
+ORD0037,2026-10-16,USB Hub,Accessories,West,5,400,350
+ORD0038,2026-10-28,Webcam,Electronics,East,2,2000,1300
+ORD0039,2026-10-07,Webcam,Electronics,North,4,2200,1300
