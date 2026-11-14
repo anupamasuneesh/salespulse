@@ -24,9 +24,14 @@ function analyzeProducts(validRows) {
 
   productList.sort((a, b) => b.totalRevenue - a.totalRevenue);
 
+  const highestQuantityProduct =
+    [...productList].sort((a, b) => b.totalQuantity - a.totalQuantity)[0] ||
+    null;
+
   return {
     productList,
     topFiveProducts: productList.slice(0, 5),
+    highestQuantityProduct,
   };
 }
 
