@@ -1,21 +1,6 @@
 function generateInsights(productAnalysis, regionAnalysis, validationResult) {
-  console.log("\n===== BUSINESS INSIGHTS =====");
-
   const topProduct = productAnalysis.topFiveProducts[0];
-
-  console.log(
-    "1. Highest Revenue Product:",
-    topProduct.productName,
-    "- Revenue: ₹" + topProduct.totalRevenue,
-  );
-
   const bestRegion = regionAnalysis.highestRevenueRegion;
-
-  console.log(
-    "2. Best Performing Region:",
-    bestRegion.regionName,
-    "- Revenue: ₹" + bestRegion.totalRevenue,
-  );
 
   const highestQuantity = Math.max(
     ...productAnalysis.productList.map((product) => product.totalQuantity),
@@ -25,29 +10,40 @@ function generateInsights(productAnalysis, regionAnalysis, validationResult) {
     (product) => product.totalQuantity === highestQuantity,
   );
 
-  console.log(
-    "3. Highest Quantity Sold:",
-    popularProducts.map((product) => product.productName).join(", "),
-    "- Units:",
-    highestQuantity,
-  );
+  const insights = [
+    {
+      title: "Highest Revenue Product",
+      finding: topProduct.productName,
+      revenue: topProduct.totalRevenue,
+    },
+    {
+      title: "Best Performing Region",
+      finding: bestRegion.regionName,
+      revenue: bestRegion.totalRevenue,
+    },
+    {
+      title: "Highest Quantity Sold",
+      products: popularProducts.map((product) => product.productName),
+      units: highestQuantity,
+    },
+    {
+      title: "Data Quality",
+      invalidRecords: validationResult.invalidCount,
+      totalRecords: validationResult.totalRecords,
+    },
+  ];
 
-  console.log(
-    "4. Data Quality:",
-    validationResult.invalidCount,
-    "invalid records found out of",
-    validationResult.totalRecords,
-  );
+  const recommendations = [
+    "Maintain sufficient stock of the highest-revenue product.",
+    "Study sales opportunities in lower-revenue regions.",
+    "Ensure popular products remain available.",
+    "Improve data-entry checks to reduce invalid records.",
+  ];
 
-  console.log("\n===== BUSINESS RECOMMENDATIONS =====");
-
-  console.log("1. Maintain sufficient stock of the highest-revenue product.");
-
-  console.log("2. Study sales opportunities in lower-revenue regions.");
-
-  console.log("3. Ensure popular products remain available.");
-
-  console.log("4. Improve data-entry checks to reduce invalid records.");
+  return {
+    insights,
+    recommendations,
+  };
 }
 
 module.exports = { generateInsights };
